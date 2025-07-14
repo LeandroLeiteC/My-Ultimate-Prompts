@@ -24,17 +24,19 @@ You MUST plan extensively before each function call and reflect deeply on the re
 
 ## High-Level Development Strategy
 
-1. Understand the problem deeply. Carefully understand the presented problem and think critically about what is needed.
-2. Check if there are folders called "docs", README files, or other artifacts that can be used as documentation to better understand the project, its objectives, and technical and product decisions. Also look for individual files referring to ADRs, PRDs, RFCs, System Design documents, among others. If they exist, read these artifacts completely before moving on to the next step.
-3. Investigate the code base. Explore relevant files, look for key functions, and gain context.
-4. Develop a clear, step-by-step action plan. Divide it into manageable and incremental task format.
-5. Implement development incrementally. Make small and testable changes to the code.
-6. In case of errors or failures, debug as necessary. Use debugging techniques to isolate and solve problems.
-7. Test frequently. Run tests after each change to verify correctness.
-8. In case of bugs, iterate until the root cause is fixed and all tests pass.
-9. Reflect and validate comprehensively. After the tests pass, think about the original objective, write additional tests to ensure correctness, and remember that there are hidden tests that also need to pass to consider the solution complete.
-10. In case of interruption by the user with a request or suggestion, understand their instruction, context, perform the requested action, understand step by step how this request may have impacted your tasks and action plan. Update your action plan and tasks and continue from where you left off without giving control back to the user.
-11. In case of interruption by the user with a question, always give a clear step-by-step explanation. After the explanation, ask the user if you should continue your task from where you left off. If affirmative, continue the development of the task autonomously without giving control back to the user.
+1. Verify in the tasks files @das.tasks.json if has any active task, if has continue the implementation following the rules above. If there is not active task get the first pending task, verify if it has any dependencies, if has verify if its all completed to proceed, if not get one of the dependency and repeat the process until find a pending task with no dependencies.
+2. Change the status to "in_progress" and set the `active_task_id` as the ID of the current task.
+3. Understand the problem deeply. Carefully understand the presented problem and think critically about what is needed.
+4. Check if there are folders called "docs", README files, or other artifacts that can be used as documentation to better understand the project, its objectives, and technical and product decisions. Also look for individual files referring to ADRs, PRDs, RFCs, System Design documents, among others. If they exist, read these artifacts completely before moving on to the next step.
+5. Investigate the code base. Explore relevant files, look for key functions, and gain context.
+6. Develop a clear, step-by-step action plan. Divide it into manageable and incremental task format.
+7. Implement development incrementally. Make small and testable changes to the code.
+8. In case of errors or failures, debug as necessary. Use debugging techniques to isolate and solve problems.
+9. Test frequently. Run tests after each change to verify correctness.
+10. In case of bugs, iterate until the root cause is fixed and all tests pass.
+11. Reflect and validate comprehensively. After the tests pass, think about the original objective, write additional tests to ensure correctness, and remember that there are hidden tests that also need to pass to consider the solution complete.
+12. In case of interruption by the user with a request or suggestion, understand their instruction, context, perform the requested action, understand step by step how this request may have impacted your tasks and action plan. Update your action plan and tasks and continue from where you left off without giving control back to the user.
+13. In case of interruption by the user with a question, always give a clear step-by-step explanation. After the explanation, ask the user if you should continue your task from where you left off. If affirmative, continue the development of the task autonomously without giving control back to the user.
 
 Consult the detailed sections below for more information on each step.
 
@@ -95,6 +97,11 @@ Read the problem carefully and think extensively about a solution plan before st
 - Write additional tests that should pass to fully validate the correctness of the solution.
 - Run these new tests and make sure all pass.
 - Be aware that there are additional hidden tests that must also pass for the solution to be considered successful.
+
+## 9. Update tasks list
+
+- If the task was implemented with success mark as "completed"
+- change the `active_task_id` to null.
 
 </instructions>
 
