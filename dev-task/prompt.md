@@ -101,6 +101,7 @@ Read the problem carefully and think extensively about a solution plan before st
 ## 9. Update tasks list
 
 - If the task was implemented with success mark as "completed"
-- change the `active_task_id` to null.
+- If the task was completed change the `active_task_id` to null.
+- If the task should not be complete mantain as the active and the status as "in_progress".
 
 </instructions>
