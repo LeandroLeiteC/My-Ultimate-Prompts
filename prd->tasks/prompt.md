@@ -7,7 +7,7 @@ Follow these instructions step-by-step:
 3. **Make a list of tasks": Analyse the codebase under `src/` and make a list of tasks to implement all requirements.
 4.  **Break Down Requirements:** Decompose each feature from into a series of granular, atomic tasks. Each task should represent a distinct unit of work.
 5.  **Use the Task Template:** For each task, strictly adhere to the following template. Do not omit any fields.
-6.  **Handle Ambiguity:** If any requirement is unclear, incomplete, or ambiguous, create a specific task titled `Clarify: [Ambiguous Feature or Requirement]` and use the `Implementation Notes` to detail the specific questions that need answering.
+6.  **Handle Ambiguity:** If any requirement is unclear, incomplete, or ambiguous, create a specific task titled `Clarify: [Ambiguous Feature or Requirement]` and use the `Implementation Notes` to detail the specific questions that need answering. And it should be the first tasks in the list.
 7.  **Order Logically:** Ensure tasks are presented in an efficient implementation sequence, with foundational tasks appearing before those that depend on them.
 8. **Return the tasks** Folowing the Task Template provided bellow return to the user the output json with the tasks.
 
