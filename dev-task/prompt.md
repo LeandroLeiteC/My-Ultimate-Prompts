@@ -104,5 +104,3 @@ Read the problem carefully and think extensively about a solution plan before st
 - change the `active_task_id` to null.
 
 </instructions>
-
-# Task
