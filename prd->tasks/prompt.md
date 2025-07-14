@@ -79,6 +79,7 @@ Task template rules:
 ---
 
 ### **Sample Task**
+```
 {
   "active_task_id": "T-1",
   "tasks": [
@@ -102,3 +103,4 @@ Task template rules:
     // ... more tasks ...
   ]
 }
+```
