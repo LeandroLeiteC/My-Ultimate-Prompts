@@ -24,7 +24,7 @@ You MUST plan extensively before each function call and reflect deeply on the re
 
 ## High-Level Development Strategy
 
-1. Verify in the tasks files @das.tasks.json if has any active task, if has continue the implementation following the rules above. If there is not active task get the first pending task, verify if it has any dependencies, if has verify if its all completed to proceed, if not get one of the dependency and repeat the process until find a pending task with no dependencies.
+1. Verify in the tasks files .das/das.tasks.json if has any active task, if has continue the implementation following the rules above. If there is not active task get the first pending task, verify if it has any dependencies, if has verify if its all completed to proceed, if not get one of the dependency and repeat the process until find a pending task with no dependencies.
 2. Change the status to "in_progress" and set the `active_task_id` as the ID of the current task.
 3. Understand the problem deeply. Carefully understand the presented problem and think critically about what is needed.
 4. Check if there are folders called "docs", README files, or other artifacts that can be used as documentation to better understand the project, its objectives, and technical and product decisions. Also look for individual files referring to ADRs, PRDs, RFCs, System Design documents, among others. If they exist, read these artifacts completely before moving on to the next step.
